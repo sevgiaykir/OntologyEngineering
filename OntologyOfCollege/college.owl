@@ -1,0 +1,728 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-17="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#goesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#goesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#School"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#hasStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#hasStudent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#hasTeacher -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#hasTeacher">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#studies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#teaches">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#worksAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#worksAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#School"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#courseID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#courseID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#firstName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#lastName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#School"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Science_and_Technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Science_and_Technology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Social_Studies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Social_Studies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#HighSchool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#HighSchool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#School"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature"/>
+        <courseID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1001</courseID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature"/>
+        <courseID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1002</courseID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math"/>
+        <courseID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</courseID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math"/>
+        <courseID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</courseID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#ScienceTech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#ScienceTech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Science_and_Technology"/>
+        <courseID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</courseID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#SocialStudies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#SocialStudies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Social_Studies"/>
+        <courseID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</courseID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+        <goesTo rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#HighSchool"/>
+        <hasTeacher rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher1"/>
+        <hasTeacher rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher2"/>
+        <hasTeacher rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher4"/>
+        <studies rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature101"/>
+        <studies rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math101"/>
+        <studies rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#ScienceTech"/>
+        <firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charlie</firstName>
+        <lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Davies</lastName>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">161800</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+        <goesTo rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#HighSchool"/>
+        <hasTeacher rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher1"/>
+        <hasTeacher rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher2"/>
+        <hasTeacher rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher3"/>
+        <studies rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature102"/>
+        <studies rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math102"/>
+        <studies rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#SocialStudies"/>
+        <firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jessica</firstName>
+        <lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown</lastName>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">161801</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+        <hasStudent rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student1"/>
+        <hasStudent rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student2"/>
+        <teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math101"/>
+        <teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math102"/>
+        <worksAt rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#HighSchool"/>
+        <firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isabella</firstName>
+        <lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smith</lastName>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">617286</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+        <hasStudent rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student1"/>
+        <hasStudent rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student2"/>
+        <teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature101"/>
+        <teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature102"/>
+        <worksAt rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#HighSchool"/>
+        <firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thomas</firstName>
+        <lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jones</lastName>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">617287</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+        <hasStudent rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student2"/>
+        <teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#SocialStudies"/>
+        <worksAt rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#HighSchool"/>
+        <firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">George</firstName>
+        <lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garcia</lastName>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">617288</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+        <hasStudent rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student1"/>
+        <teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#ScienceTech"/>
+        <worksAt rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#HighSchool"/>
+        <firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emily</firstName>
+        <lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Williams</lastName>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">617289</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Literature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Science_and_Technology"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Social_Studies"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#sc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teacher teaches math and has student, the student studies math.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Math"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#teaches"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#hasStudent"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#studies"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Student goes to school and has a teacher, the teacher works at school.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#School"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#sc"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#goesTo"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#sc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#hasTeacher"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#worksAt"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#sc"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teacher gives course and has student, the student has a teacher.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Teacher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Course"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#teaches"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#Student"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#hasStudent"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#hasTeacher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2021/0/untitled-ontology-17#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
